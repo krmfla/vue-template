@@ -61,3 +61,7 @@ $ npm run build
   ...
 </style>
 ```
+
+SEO
+prerender
+nuxt.js
