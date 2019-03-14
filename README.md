@@ -29,7 +29,9 @@ $ npm run serve
 
 <br />
 
-file structure
+vetur
+
+file structure(image)
 
 ## Router
 
@@ -43,9 +45,19 @@ main.js
 
 ```
 
+<br />
+
 ## Build
 
 ```sh
 $ npm run build
 ```
 
+<br />
+
+## Style Scope
+```html
+<style scoped>
+  ...
+</style>
+```
