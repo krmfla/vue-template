@@ -17,18 +17,32 @@ const router = new VueRouter({
     {
       path: '/hello',
       name: 'hello', // TODO: ?
-      component: Hello
+      component: Hello,
+      meta: {
+        title: "HELLO"
+      }
     },
     {
       path: '/c2f',
       name: 'c2f',
-      component: CtoF
+      component: CtoF,
+      meta: {
+        title: "C TO F"
+      }
     },
     {
       path: '/*',
       redirect: '/hello', // 轉址
     },
   ]
+});
+
+// TODO: beforeEach afterEach?
+
+router.afterEach((to) => {
+  Vue.nextTick( () => {
+    document.title = to.meta.title ? to.meta.title : 'default title';
+  });
 });
 
 new Vue({
