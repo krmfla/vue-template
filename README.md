@@ -62,6 +62,18 @@ $ npm run build
 </style>
 ```
 
+<br />
+
+## Meta
+
+```javascript
+router.afterEach((to) => {
+  Vue.nextTick( () => {
+    document.title = to.meta.title ? to.meta.title : 'default title';
+  });
+});
+```
+
 SEO
 prerender
 nuxt.js
