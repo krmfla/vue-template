@@ -27,11 +27,11 @@ $ cd PROJECT
 $ npm run serve
 ```
 
+![structure](./assets/structure.png)
+
 <br />
 
-vetur
-
-file structure(image)
+![vetur](./assets/vetur.png)
 
 ## Router
 
