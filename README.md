@@ -96,7 +96,7 @@ $ npm run build
 ## Style Scope
 ```html
 <style scoped>
-  p {
+  div {
     ...
   }
 </style>
@@ -115,6 +115,8 @@ router.afterEach((to, from) => {
   });
 });
 ```
+
+<br />
 
 ## Component
 
@@ -171,6 +173,6 @@ Assemble.vue
 
 SEO
 
-prerender
+[prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin)
 
-nuxt.js
+[nuxt.js](https://github.com/nuxt/nuxt.js)
