@@ -9,6 +9,7 @@ Vue.config.productionTip = false // TODO: ?
 // page
 import Hello from './pages/Hello.vue';
 import CtoF from './pages/C2F.vue';
+import Assemble from './pages/Assemble.vue';
 import App from './App.vue'
 
 const router = new VueRouter({
@@ -31,6 +32,14 @@ const router = new VueRouter({
       }
     },
     {
+      path: '/assemble',
+      name: 'assemble',
+      component: Assemble,
+      meta: {
+        title: "Assemble"
+      }
+    },
+    {
       path: '/*',
       redirect: '/hello', // 轉址
     },
@@ -40,7 +49,7 @@ const router = new VueRouter({
 // TODO: beforeEach afterEach?
 
 router.afterEach((to) => {
-  Vue.nextTick( () => {
+  Vue.nextTick(() => {
     document.title = to.meta.title ? to.meta.title : 'default title';
   });
 });

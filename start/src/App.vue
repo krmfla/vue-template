@@ -2,8 +2,9 @@
   <!-- 必須要被一個 DOM 物件包起來 -->
   <div>
     <!-- TODO: 用 name 或 path 的差別? -->
-    <router-link :to="{path: '/hello'}"> Hello </router-link>
-    <router-link :to="{name: 'c2f'}"> CtoF </router-link>
+    <router-link :to="{path: '/hello'}" class="nav">Hello</router-link>
+    <router-link :to="{name: 'c2f'}" class="nav">CtoF</router-link>
+    <router-link :to="{path: 'assemble'}" class="nav">Assemble</router-link>
 
     <router-view></router-view>
   </div>
@@ -13,11 +14,15 @@
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.nav {
+  padding: 5px;
 }
 </style>
