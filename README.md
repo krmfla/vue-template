@@ -1,6 +1,8 @@
 # Vue Template
 
-vue-cli + vue-router
+tools version:
+
+**vue-cli** `3.5.0` + **vue-router** `3.0.2` + **vue** `2.6.6`
 
 <br />
 
