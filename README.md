@@ -31,7 +31,11 @@ $ npm run serve
 
 <br />
 
+Vetur: Vue tooling for VS Code
+
 ![vetur](./assets/vetur.png)
+
+<br />
 
 ## Router
 
@@ -69,6 +73,16 @@ new Vue({
 }).$mount('#app')
 ```
 
+Vue.app
+```html
+<template>
+  <div>
+    <router-link :to="{path: '/hello'}" class="nav">Hello</router-link>
+    <router-view></router-view>
+  </div>
+</template>
+```
+
 <br />
 
 ## Build
@@ -88,6 +102,8 @@ $ npm run build
 </style>
 ```
 
+![scoped](./assets/scoped.png)
+
 <br />
 
 ## Meta
@@ -102,9 +118,52 @@ router.afterEach((to, from) => {
 
 ## Component
 
+Assemble.vue
+```html
+<template>
+  <div>
+    <vheader></vheader>
+  </div>
+</template>
+
+<script>
+export default {
+  components: {
+    vheader
+  }
+}
+</script>
+
+<style>
+  div {
+    ...
+  }
+</style>
+```
+
 <br />
 
 ## Slot
+
+content.vue
+```html
+<template>
+  <div>
+    <slot name="right" class="right"></slot>
+  </div>
+</template>
+```
+
+Assemble.vue
+```html
+<template>
+  <div>
+    <vcontent>
+      <div slot="right" class="right">RIGHT</div>
+    </vcontent>
+  </div>
+</template>
+```
 
 <br />
 
