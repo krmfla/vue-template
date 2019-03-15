@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vheader></vheader>
+    <header></header>
     <vcontent>
       <div slot="right" class="right">RIGHT</div>
     </vcontent>
@@ -10,6 +10,7 @@
 </template>
 
 <script>
+// vue.runtime.esm.js?e832:619 [Vue warn]: Do not use built-in or reserved HTML elements as component id: header
 import vheader from "../components/header.vue";
 import vcontent from "../components/content.vue";
 import content2 from "../components/content2.vue";
@@ -17,7 +18,8 @@ import container from "../components/container.vue";
 
 export default {
   components: {
-    vheader,
+    // ES6 物件擴展 object literal extension
+    vheader, // = vheader: vheader
     vcontent,
     content2,
     container

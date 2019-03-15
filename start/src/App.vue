@@ -1,10 +1,11 @@
 <template>
   <!-- 必須要被一個 DOM 物件包起來 -->
   <div>
-    <!-- TODO: 用 name 或 path 的差別? -->
+    <!-- 用 name 與 path 的差別? -->
+    <!-- 命名路由: https://router.vuejs.org/zh/guide/essentials/named-routes.html -->
     <router-link :to="{path: '/hello'}" class="nav">Hello</router-link>
-    <router-link :to="{name: 'c2f'}" class="nav">CtoF</router-link>
-    <router-link :to="{path: 'assemble'}" class="nav">Assemble</router-link>
+    <router-link :to="{name: 'c2f', params: { userId: 123 }}" class="nav">CtoF</router-link>
+    <router-link :to="{path: '/assemble'}" class="nav">Assemble</router-link>
 
     <router-view></router-view>
   </div>
