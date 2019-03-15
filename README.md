@@ -35,14 +35,38 @@ file structure(image)
 
 ## Router
 
+install
+
 ```sh
 $ npm install vue-router --save-dev
 ```
 
 main.js
 
-```js
+```javascript
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
+Vue.use(VueRouter);
+
+// pages
+import Hello from './pages/Hello.vue';
+
+const router = new VueRouter({
+  mode: 'history',
+  routes: [
+    {
+      path: '/hello',
+      name: 'hello',
+      component: Hello,
+    }
+  ]
+});
+
+new Vue({
+  router,
+  render: h => h(App),
+}).$mount('#app')
 ```
 
 <br />
@@ -58,7 +82,9 @@ $ npm run build
 ## Style Scope
 ```html
 <style scoped>
-  ...
+  p {
+    ...
+  }
 </style>
 ```
 
@@ -67,13 +93,25 @@ $ npm run build
 ## Meta
 
 ```javascript
-router.afterEach((to) => {
+router.afterEach((to, from) => {
   Vue.nextTick( () => {
     document.title = to.meta.title ? to.meta.title : 'default title';
   });
 });
 ```
 
+## Component
+
+<br />
+
+## Slot
+
+<br />
+
+## Prerender
+
 SEO
+
 prerender
+
 nuxt.js
