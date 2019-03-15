@@ -11,7 +11,8 @@
   </div>
 </template>
 
-<script></script>
+<!-- 當 script 無內容時， build 起來的檔案會 render 失敗 -->
+<!-- <script></script> -->
 
 <style>
 #app {
