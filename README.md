@@ -6,6 +6,16 @@ tools version:
 
 <br />
 
+## Vue CLI 3
+
+vue-cli 3 是基於 webpack 4 構建
+
+零配置/最少配置
+
+以插件進行擴展
+
+<br />
+
 ## Install
 
 ```sh
@@ -39,12 +49,31 @@ Vetur: Vue tooling for VS Code
 
 <br />
 
+### 
+
+vue-cli service
+
+```sh
+$ npm install -g @vue/cli-service-global
+
+# Valid entry file should be one of: main.js, index.js, App.vue or app.vue.
+$ cd src
+$ vue serve
+```
+
+<br />
+
 ## Router
 
 install
 
 ```sh
 $ npm install vue-router --save-dev
+
+# 或
+
+# 以插件方式引入預設配置
+$ vue add router
 ```
 
 main.js
@@ -53,6 +82,7 @@ main.js
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+// 使用插件
 Vue.use(VueRouter);
 
 // pages
@@ -178,3 +208,9 @@ SEO
 [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin)
 
 [nuxt.js](https://github.com/nuxt/nuxt.js)
+
+<br />
+
+## Reference
+
+[如何配置 vue-cli 3.0 的 vue.config.js](https://segmentfault.com/a/1190000016101954)
