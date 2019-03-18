@@ -105,7 +105,7 @@ new Vue({
 }).$mount('#app')
 ```
 
-Vue.app
+App.vue
 ```html
 <template>
   <div>
@@ -153,6 +153,8 @@ router.afterEach((to, from) => {
 ## Component
 
 Assemble.vue
+
+*單文件組件格式 Single-File Component*
 ```html
 <template>
   <div>
@@ -214,3 +216,5 @@ SEO
 ## Reference
 
 [如何配置 vue-cli 3.0 的 vue.config.js](https://segmentfault.com/a/1190000016101954)
+
+[實作小範例入門 Vue & Vuex 2.0](https://ithelp.ithome.com.tw/users/20103326/ironman/1114)
