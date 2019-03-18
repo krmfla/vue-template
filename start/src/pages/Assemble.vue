@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header></header>
+    <vheader></vheader>
     <vcontent>
       <div slot="right" class="right">RIGHT</div>
     </vcontent>
