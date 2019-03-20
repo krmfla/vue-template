@@ -221,7 +221,7 @@ Assemble.vue
 
 ## Prerender
 
-SEO
+如何解決 Server Side Rendering 的 SEO 問題
 
 [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin)
 
