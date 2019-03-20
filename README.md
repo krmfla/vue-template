@@ -8,11 +8,13 @@ tools version:
 
 ## Vue CLI 3
 
-vue-cli 3 是基於 webpack 4 構建
+快速產生開發環境：自動化配置、檔案結構
 
-零配置/最少配置
+* vue-cli 3 是基於 webpack 4 構建
 
-以插件進行擴展
+* 零配置/最少配置
+
+* 以插件進行擴展
 
 <br />
 
@@ -126,6 +128,12 @@ $ npm run build
 <br />
 
 ## Style Scope
+
+[CSS 作用域](https://vue-loader-v14.vuejs.org/zh-cn/features/scoped-css.html)
+
+將 css 限定在當前的 template 內，避免 CSS 交互影響
+
+
 ```html
 <style scoped>
   div {
@@ -140,6 +148,8 @@ $ npm run build
 
 ## Meta
 
+SPA 如何置換網站標題及 meta tag 的內容?
+
 ```javascript
 router.afterEach((to, from) => {
   Vue.nextTick( () => {
@@ -150,11 +160,15 @@ router.afterEach((to, from) => {
 
 <br />
 
-## Component
+## Component | 組件
 
 Assemble.vue
 
 *單文件組件格式 Single-File Component*
+
+一隻檔案就是一個 component
+
+
 ```html
 <template>
   <div>
@@ -179,7 +193,9 @@ export default {
 
 <br />
 
-## Slot
+## Slot | 插槽
+
+將 component 挖洞，由外部注入內容
 
 content.vue
 ```html
