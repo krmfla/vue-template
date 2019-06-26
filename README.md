@@ -27,6 +27,8 @@ $ npm install -g npm@latest
 $ npm install -g vue
 
 $ npm install -g @vue/cli
+
+# npm install -g yarn
 ```
 
 <br />
@@ -39,6 +41,8 @@ $ vue create PROJECT
 $ cd PROJECT
 
 $ npm run serve
+# 或
+$ yarn serve
 ```
 
 ![structure](./assets/structure.png)
