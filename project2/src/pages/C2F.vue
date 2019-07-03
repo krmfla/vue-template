@@ -2,6 +2,7 @@
   <div class="container">
     <h1>Temperature Conversion</h1>
     <router-view></router-view>
+    <router-view name="Addon"></router-view>
     <!-- 切換模式按鈕 -->
     <input id="toggleTemperature" type="checkbox" v-model="isCelsius">
     <label for="toggleTemperature">切換：{{ toggleTemperature }}</label>

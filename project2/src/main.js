@@ -7,14 +7,17 @@ Vue.use(VueRouter);
 // 讓 vue 在正式環境下，不會顯示開發提示
 Vue.config.productionTip = false;
 
-// page
+// pages
 import Hello from './pages/Hello.vue';
 import CtoF from './pages/C2F.vue';
-import DynamicContent1 from './components/DynamicContent1.vue';
-import DynamicContent2 from './components/DynamicContent2.vue';
 import Assemble from './pages/Assemble.vue';
 import Slot from './pages/Slot.vue';
 import App from './App.vue'
+
+// components
+import DynamicContent1 from './components/DynamicContent1.vue';
+import DynamicContent2 from './components/DynamicContent2.vue';
+import Addon from './components/Addon.vue';
 
 const router = new VueRouter({
   // vue-router HTML5 History 模式
@@ -43,8 +46,11 @@ const router = new VueRouter({
         },
         {
           path: '456',
-          component: DynamicContent2
-        },
+          components: {
+            default: DynamicContent2,
+            Addon: Addon
+          }
+        }
       ]
     },
     {
