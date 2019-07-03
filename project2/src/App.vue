@@ -4,8 +4,11 @@
     <!-- 用 name 與 path 的差別? -->
     <!-- 命名路由: https://router.vuejs.org/zh/guide/essentials/named-routes.html -->
     <router-link :to="{path: '/hello'}" class="nav">Hello</router-link>
-    <router-link :to="{name: 'c2f', params: { userId: 123 }}" class="nav">CtoF</router-link>
-    <router-link :to="{path: '/assemble'}" class="nav">Assemble</router-link>
+    <router-link :to="{path: '/c2f/123' }" class="nav">CtoF1</router-link>
+    <router-link :to="{path: '/c2f/456' }" class="nav">CtoF2</router-link>
+    <!-- using router name -->
+    <router-link :to="{name: 'assemble'}" class="nav">Assemble</router-link>
+    <router-link :to="{path: '/slot'}" class="nav">Slot</router-link>
 
     <router-view></router-view>
   </div>
