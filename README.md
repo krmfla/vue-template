@@ -239,6 +239,10 @@ Assemble.vue
 
 [實作小範例入門 Vue & Vuex 2.0](https://ithelp.ithome.com.tw/users/20103326/ironman/1114)
 
+
 vue router 切換頁面畫面殘留問題
 
 [vue-router路由切换 组件重用挖下的坑](https://blog.csdn.net/Clark_Fitz817/article/details/79134944)
+
+
+[Dynamic Component Templates with Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
