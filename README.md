@@ -221,6 +221,14 @@ Assemble.vue
 </template>
 ```
 
+### Props in, events out
+
+![Props in, event out](./assets/props-events.png);
+
+資料透過 props 傳入，而更新透過 events 觸發。
+
+
+
 <br />
 
 ## Prerender
