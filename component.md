@@ -67,11 +67,23 @@ HTML
   <h3>Total: {{sum}}</h3>
   <button-counter :initial-counter="10" @add-sum="sum++" @init-sum="count_sum"></button-counter>
   <button-counter :initial-counter="20" @add-sum="sum++" @init-sum="count_sum"></button-counter>
+  <button-reset></button-reset>
 </div>
 ```
 
 JS
 ```js
+var event_handler = new Vue();
+
+Vue.component("button-reset", {
+  template: '<button @click="reset">reset</button>',
+  methods: {
+    reset: function() {
+      event_handler.$emit("reset");
+    }
+  }
+});
+
 Vue.component("button-counter", {
   props: ["initialCounter"],
   data() {
@@ -80,7 +92,15 @@ Vue.component("button-counter", {
     };
   },
   template:
-  "<button @click=\"count++; $emit('add-sum')\">You clicked me {{ count }} times.</button>",
+    "<button @click=\"count++; $emit('add-sum')\">You clicked me {{ count }} times.</button>",
+  methods: {
+    reset_count: function() {
+      this.count = 0;
+    }
+  },
+  created: function() {
+    event_handler.$on("reset", this.reset_count);
+  },
   mounted: function() {
     this.$emit("init-sum", this.count);
   }
@@ -94,7 +114,13 @@ new Vue({
   methods: {
     count_sum: function(value) {
       this.sum += value;
+    },
+    reset_sum: function() {
+      this.sum = 0;
     }
+  },
+  created: function() {
+    event_handler.$on("reset", this.reset_sum);
   }
 });
 ```
