@@ -164,62 +164,9 @@ router.afterEach((to, from) => {
 
 <br />
 
-## Component | 組件
+## [Component](./component.md)
 
-Assemble.vue
-
-*單文件組件格式 Single-File Component*
-
-一隻檔案就是一個 component
-
-
-```html
-<template>
-  <div>
-    <vheader></vheader>
-  </div>
-</template>
-
-<script>
-export default {
-  components: {
-    vheader
-  }
-}
-</script>
-
-<style>
-  div {
-    ...
-  }
-</style>
-```
-
-<br />
-
-## Slot | 插槽
-
-將 component 挖洞，由外部注入內容
-
-content.vue
-```html
-<template>
-  <div>
-    <slot name="right" class="right"></slot>
-  </div>
-</template>
-```
-
-Assemble.vue
-```html
-<template>
-  <div>
-    <vcontent>
-      <div slot="right" class="right">RIGHT</div>
-    </vcontent>
-  </div>
-</template>
-```
+[link](./component.md)
 
 <br />
 
@@ -238,3 +185,8 @@ Assemble.vue
 [如何配置 vue-cli 3.0 的 vue.config.js](https://segmentfault.com/a/1190000016101954)
 
 [實作小範例入門 Vue & Vuex 2.0](https://ithelp.ithome.com.tw/users/20103326/ironman/1114)
+
+
+vue router 切換頁面畫面殘留問題
+
+[vue-router路由切换 组件重用挖下的坑](https://blog.csdn.net/Clark_Fitz817/article/details/79134944)
