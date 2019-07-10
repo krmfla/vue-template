@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import store from './store/index.js';
 
 // init
 Vue.use(VueRouter);
@@ -12,6 +13,7 @@ import Hello from './pages/Hello.vue';
 import CtoF from './pages/C2F.vue';
 import Assemble from './pages/Assemble.vue';
 import Slot from './pages/Slot.vue';
+import Count from './pages/Count.vue'
 import App from './App.vue'
 
 // components
@@ -70,6 +72,11 @@ const router = new VueRouter({
       }
     },
     {
+      path: '/count',
+      name: 'count',
+      component: Count
+    },
+    {
       path: '/*',
       redirect: '/hello', // 當 path 無匹配時, 轉址到預設位置
     },
@@ -88,5 +95,6 @@ router.afterEach((to) => {
 
 new Vue({
   router, // 通過 router 配置参數注入路由
+  store, // vuex
   render: h => h(App),
 }).$mount('#app');

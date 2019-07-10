@@ -9,6 +9,7 @@
     <!-- using router name -->
     <router-link :to="{name: 'assemble'}" class="nav">Assemble</router-link>
     <router-link :to="{path: '/slot'}" class="nav">Slot</router-link>
+    <router-link :to="{path: '/count'}" class="nav">vuex-count</router-link>
 
     <router-view></router-view>
   </div>
