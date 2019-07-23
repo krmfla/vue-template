@@ -126,6 +126,8 @@ new Vue({
 ```
 <br />
 
+[DEMO](https://codepen.io/krmfla/pen/GbwdOR)
+
 ## Reference
 
 [Dynamic Component Templates with Vue.js](https://medium.com/scrumpy/dynamic-component-templates-with-vue-js-d9236ab183bb)
