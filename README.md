@@ -190,3 +190,5 @@ router.afterEach((to, from) => {
 vue router 切換頁面畫面殘留問題
 
 [vue-router路由切换 组件重用挖下的坑](https://blog.csdn.net/Clark_Fitz817/article/details/79134944)
+
+[解決 'vue' 不是內部或外部命令、可執行的程式或批次檔](https://bingzhichen.pixnet.net/blog/post/48805359-%E8%A7%A3%E6%B1%BA-%27vue%27-%E4%B8%8D%E6%98%AF%E5%85%A7%E9%83%A8%E6%88%96%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4%E3%80%81%E5%8F%AF%E5%9F%B7%E8%A1%8C%E7%9A%84%E7%A8%8B)
